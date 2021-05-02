@@ -119,7 +119,7 @@ int sub_10002FFE(void* _this, void* userdict_path) {
 	return result;
 }
 
-int trie_record_jis_Constructor(void* _this, void *a2) {
+int trie_record_jis_Constructor2(void* _this, void *a2) {
 
 	void* v15 = nullptr;
 	void* v17 = nullptr;
@@ -169,6 +169,26 @@ int trie_record_jis_Constructor(void* _this, void *a2) {
 	CString_Destructor((LPVOID*)((DWORD*)&_this + 60));
 
 	return 0;
+}
+
+__declspec(naked) int __fastcall trie_record_jis_Constructor() {
+
+	__asm {
+		push ecx
+
+		push[esp + 0x04 + 0x04]
+		push ecx
+		call trie_record_jis_Constructor2
+		add esp, 0x08
+
+		mov ecx, [esp]
+		push[esp + 0x04 + 0x04]
+		mov eax, 0x101bba70
+		call eax
+
+		pop eax
+		retn 4
+	}
 }
 
 int main() {
