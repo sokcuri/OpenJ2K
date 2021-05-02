@@ -441,4 +441,7 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 *.tlog
 
+# UserDict files
+Dat/UserDict.jk
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,c++,windows
