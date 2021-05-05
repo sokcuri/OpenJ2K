@@ -1,4 +1,5 @@
 #include "trie_record_jis.h"
+#include <brotli/decode.h>
 
 trie_record_jis::trie_record_jis(const char* daPath)
 {
