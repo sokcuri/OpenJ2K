@@ -22,8 +22,9 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{f9d19e77-7bbd-4f35-aaca-8876096ca85d}</ProjectGuid>
-    <RootNamespace>J2KHook</RootNamespace>
+    <RootNamespace>OpenJ2K</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>OpenJ2K</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -141,12 +142,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="J2KHook.cpp" />
+    <ClCompile Include="CJ2K_Engine.cpp" />
+    <ClCompile Include="COpenJ2K.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="subhook.c" />
+    <ClCompile Include="trie_record_jis.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CJ2K_Engine.h" />
+    <ClInclude Include="COpenJ2K.h" />
     <ClInclude Include="subhook.h" />
     <ClInclude Include="subhook_private.h" />
+    <ClInclude Include="trie_record_jis.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

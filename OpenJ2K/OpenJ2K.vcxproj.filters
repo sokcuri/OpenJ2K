@@ -15,10 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="J2KHook.cpp">
+    <ClCompile Include="subhook.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="subhook.c">
+    <ClCompile Include="CJ2K_Engine.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="COpenJ2K.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="trie_record_jis.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -27,6 +36,15 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="subhook_private.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CJ2K_Engine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="COpenJ2K.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="trie_record_jis.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
