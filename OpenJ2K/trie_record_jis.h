@@ -5,6 +5,11 @@ class trie_record_jis
 {
 public:
 	trie_record_jis(const char *daPath);
+	int GetGobiInfValue(char ch);
+	void SaveMatchRec(int a2, struct CTrieParameters* a3);
+	bool FirstLoadDatabase();
+	void* GetRecInfo(int a2, int a3);
+	int GetWordInfo(const char* SearchText, struct CRecData** RecData, int ExtraParam);
 	virtual ~trie_record_jis();
 
 private:
